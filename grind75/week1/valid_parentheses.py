@@ -6,6 +6,16 @@ class Solution:
     closing_parentheses: Final[List[str]] = {")", "]", "}"}
 
     def is_valid(self, s: str) -> bool:
+        """Checks if a string of parentheses consists of matching pairs.
+
+        Each opening parenthesis needs to have a matching closing parenthesis.
+        Nested pairs of parentheses are also valid, e.g. "({})".
+
+        :param s: String consisting of parentheses (, ), [, ], {, }. No other
+        characters are allowed.
+        :return: Boolean indicating if the string s contains only matching pairs
+        of parentheses.
+        """
         # Optimization: If uneven number of parentheses in string, they cannot match.
         if len(s) % 2 != 0:
             return False
