@@ -1,6 +1,6 @@
 import pytest
 
-from grind75.week3.reverse_bits import Solution
+from grind75.week4.reverse_bits import Solution
 
 
 @pytest.mark.parametrize(
