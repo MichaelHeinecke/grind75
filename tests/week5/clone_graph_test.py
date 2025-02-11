@@ -1,5 +1,5 @@
 from collections import deque
-from typing import Optional, List, Any
+from typing import Optional, List
 
 import pytest
 
